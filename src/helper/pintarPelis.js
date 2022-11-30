@@ -35,7 +35,11 @@ export function pintarPelis(cartelera){
         //Actor
         let actor = document.createElement("p")
         actor.classList.add("text-start")
-        actor.textContent = "Actores: " + pelicula.actores
+        actor.textContent = "Actores: " + pelicula.actor
+
+        let duracion = document.createElement("p")
+        duracion.classList.add("text-start")
+        duracion.textContent = "Duracion: " +pelicula.duracion
     
     
         
@@ -46,6 +50,7 @@ export function pintarPelis(cartelera){
         tarjeta.appendChild(idioma)
         tarjeta.appendChild(direc)
         tarjeta.appendChild(actor)
+        tarjeta.appendChild(duracion)
     
         columna.appendChild(tarjeta)
         fila.appendChild(columna)

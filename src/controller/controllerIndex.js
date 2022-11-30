@@ -9,7 +9,7 @@ let peliculaSeleccionada={}
 fila.addEventListener("click", function(evento){
     peliculaSeleccionada.poster=(evento.target.parentElement.querySelector('img').src)
     peliculaSeleccionada.titulo=(evento.target.parentElement.querySelector('h3').textContent)//Nombre
-    peliculaSeleccionada.genero=(evento.target.parentElement.querySelector('h4').textContent)//Genero
+    peliculaSeleccionada.genero=(evento.target.parentElement.querySelector('h5').textContent)//Genero
     peliculaSeleccionada.idioma=(evento.target.parentElement.querySelector('h6').textContent)//Idioma
     peliculaSeleccionada.sinopsis=(evento.target.parentElement.querySelector('p').textContent)//Sipnosis
     

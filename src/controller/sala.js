@@ -7,7 +7,6 @@ let asientos=[
 
 let cinema = document.getElementById('salaCinema')
 let boton = document.getElementById('boton')
-let pagar = document.getElementById('mostrar')
 let cs = 0
 silla(asientos, cinema)
 //Evento de click en la sala
@@ -26,9 +25,7 @@ cinema.addEventListener('click', function(evento){
                         boton.addEventListener('click',function(){
                             asiento.estado=2
                             evento.target.src="../../assets/img/cinema-red.png"
-                            pagar.innerHTML=cs
-                            return(asiento.estado)
-                            
+                            document.getElementById("mostrar").value = parseFloat(cs) 
                         }) 
                     }else if(asiento.estado==1){
                         asiento.estado=0
