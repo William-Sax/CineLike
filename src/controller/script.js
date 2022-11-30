@@ -11,9 +11,11 @@ function toggleText(){
 
     if(hideText.classList.contains('show')){
         boton.innerHTML = 'Comprar';
+        
     }
 
     else{
         boton.innerHTML='Ver sillas';
+        
     }
 }
