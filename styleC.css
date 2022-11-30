@@ -14,6 +14,12 @@ h1{
     position: relative;
     animation: fila2 20s infinite alternate linear;
 }
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
 .card{
     margin-right: 1px;
     position: relative;
@@ -23,12 +29,13 @@ h1{
 }
 
 #fila2 img{
-    width: 200px;
+    width: 250px;
     height: 350px;
     object-fit: cover;
 
 }
 #fila{
+    display: flex;
     position: relative;
     height: 250px;
     width: 350px;
@@ -38,21 +45,21 @@ h1{
     height: 100%;
 }
 h3{
-    position: absolute;
+    position: relative;
     top: 0;
-    width: 100%;
     height: 100%;
-    background: rgba(11,103,123,0.6);
+    width: 100%;
+    background: rgba(44, 162, 189, 0.6);
     transition: all 500ms ease-out;
     opacity: 0;
-    text-align: center;
-    
+    text-align: center; 
 }
 h3:hover{
     opacity: 1;
     visibility: visible;
 
 }
+
 @keyframes fila2{
     0%{margin-left: 0;}
     20%{margin-left:0;}
